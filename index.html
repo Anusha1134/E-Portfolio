@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cryptography & Network Security E-Portfolio">
+  <title>Cryptography & Network Security | E-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">INITIALIZING SECURE PORTFOLIO<span>_</span></div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo"><span>&lt;</span>CRYPT<span>0</span><span>/&gt;</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#concepts">Concepts</a>
+      <a href="#algorithms">Algorithms</a>
+      <a href="#practical">Practical</a>
+      <a href="#project">Mini Project</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#reflection">Reflection</a>
+      <a href="#references">References</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> CRYPTOGRAPHY & NETWORK SECURITY</div>
+        <h1>SECURE THE<br><span>DIGITAL WORLD</span></h1>
+        <p class="hero-subtitle">An interactive learning portfolio exploring encryption, cybersecurity, algorithms and secure communication.</p>
+        <div class="student-card glass">
+          <div class="avatar">AT</div>
+          <div>
+            <strong>ANUSHA T</strong>
+            <small>III Year • CSE • Kings College of Engineering</small>
+          </div>
+          <div class="status">● ONLINE</div>
+        </div>
+        <div class="hero-actions">
+          <a href="#algorithms" class="btn btn-primary">Explore Algorithms <span>→</span></a>
+          <a href="#about" class="btn btn-ghost">View Portfolio</a>
+        </div>
+      </div>
+      <div class="hero-orb">
+        <div class="orb-ring ring1"></div>
+        <div class="orb-ring ring2"></div>
+        <div class="orb-ring ring3"></div>
+        <div class="lock">⌁</div>
+        <div class="orb-label">AES<br><small>RSA • DES • SHA</small></div>
+      </div>
+      <div class="scroll-indicator">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <span>01 / PROFILE</span>
+        <h2>ABOUT <em>ME</em></h2>
+        <p>A student journey into the world of secure computing.</p>
+      </div>
+      <div class="about-grid">
+        <div class="profile-panel glass reveal">
+          <div class="profile-photo">YOUR<br>PHOTO</div>
+          <div class="profile-info">
+            <h3>Anusha T</h3>
+            <p>Computer Science & Engineering</p>
+            <div class="detail"><span>Register No.</span><b>821124104010</b></div>
+            <div class="detail"><span>College</span><b>Kings College of Engineering</b></div>
+            <div class="detail"><span>Year</span><b>III Year</b></div>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="big-copy">I am a <strong>CSE student</strong> interested in technology, programming and the systems that keep our digital world secure.</p>
+          <p>This e-portfolio documents my learning journey through Cryptography & Network Security — from classical substitution ciphers to modern encryption standards and public-key cryptography.</p>
+          <div class="skill-row">
+            <span>Programming</span><span>Cybersecurity</span><span>Problem Solving</span><span>Web Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section concepts" id="concepts">
+      <div class="section-heading reveal">
+        <span>02 / FOUNDATION</span>
+        <h2>CRYPTOGRAPHY <em>CONCEPTS</em></h2>
+        <p>The building blocks behind secure communication.</p>
+      </div>
+      <div class="concept-grid">
+        <article class="concept-card glass reveal"><div class="icon">01</div><h3>Plaintext</h3><p>Original readable information before encryption is applied.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">02</div><h3>Ciphertext</h3><p>Scrambled information produced after encryption.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">03</div><h3>Encryption</h3><p>Converting plaintext into ciphertext using an algorithm and key.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">04</div><h3>Decryption</h3><p>Recovering the original plaintext from ciphertext using the correct key.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">05</div><h3>Symmetric Key</h3><p>The same secret key is used for encryption and decryption.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">06</div><h3>Asymmetric Key</h3><p>A public/private key pair enables secure communication without sharing one secret key.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">07</div><h3>Hashing</h3><p>One-way transformation used for integrity, authentication and password protection.</p></article>
+        <article class="concept-card glass reveal"><div class="icon">08</div><h3>Digital Signature</h3><p>Provides authenticity, integrity and non-repudiation for digital data.</p></article>
+      </div>
+    </section>
+
+    <section class="section algorithms" id="algorithms">
+      <div class="section-heading reveal">
+        <span>03 / ALGORITHMS</span>
+        <h2>ENCRYPTION <em>LAB</em></h2>
+        <p>Explore the algorithms covered in the course.</p>
+      </div>
+      <div class="algorithm-grid">
+        <article class="algo-card reveal"><span class="algo-num">01</span><div class="algo-icon">C</div><h3>Caesar Cipher</h3><p>Classical substitution cipher based on shifting alphabetic characters.</p><button onclick="openAlgo('Caesar Cipher','Objective: Understand basic substitution encryption.','Each alphabetic character is shifted by a fixed number of positions.','HELLO → KHOOR (shift = 3)','A simple cipher that demonstrates the fundamentals of encryption and key-based transformation.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">02</span><div class="algo-icon">P</div><h3>Playfair Cipher</h3><p>Digraph substitution cipher that encrypts pairs of letters using a key square.</p><button onclick="openAlgo('Playfair Cipher','Objective: Learn digraph-based classical encryption.','A 5×5 key matrix is constructed and plaintext is encrypted in letter pairs.','MEET → encrypted digraphs depend on the selected key square.','I learned how matrix-based rules can transform pairs of characters instead of individual letters.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">03</span><div class="algo-icon">D</div><h3>DES</h3><p>A symmetric block cipher historically used for secure data encryption.</p><button onclick="openAlgo('DES','Objective: Study block-based symmetric encryption.','DES operates on 64-bit blocks using a 56-bit effective key and multiple Feistel rounds.','Plaintext + Key → 64-bit Ciphertext','I learned the importance of rounds, substitution, permutation and key scheduling in block ciphers.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">04</span><div class="algo-icon">A</div><h3>AES</h3><p>Modern symmetric block cipher widely used to protect digital information.</p><button onclick="openAlgo('AES','Objective: Understand modern symmetric encryption.','AES uses substitution, permutation and multiple transformation rounds with 128-bit blocks.','Plaintext + Secret Key → Ciphertext','AES showed me how modern systems combine strong mathematical transformations to provide efficient security.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">05</span><div class="algo-icon">R</div><h3>RSA</h3><p>Public-key algorithm based on the mathematical difficulty of factoring large integers.</p><button onclick="openAlgo('RSA','Objective: Understand public-key encryption.','RSA generates public and private keys from large prime numbers and modular arithmetic.','Message + Public Key → Ciphertext → Private Key → Message','I learned how public-key cryptography solves the problem of securely exchanging information without sharing a secret key beforehand.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">06</span><div class="algo-icon">DH</div><h3>Diffie–Hellman</h3><p>Key agreement method that allows two parties to establish a shared secret.</p><button onclick="openAlgo('Diffie–Hellman','Objective: Learn secure shared-secret establishment.','Two parties exchange public values derived from private numbers and compute the same shared secret.','Alice + Bob → Shared Secret','I understood how two parties can establish a common secret over an insecure communication channel.')">View Details →</button></article>
+        <article class="algo-card reveal"><span class="algo-num">07</span><div class="algo-icon">RC</div><h3>RC4</h3><p>Stream cipher that generates a pseudorandom keystream for encryption.</p><button onclick="openAlgo('RC4','Objective: Understand stream cipher operation.','RC4 uses a variable-length key and a state array to generate a keystream.','Plaintext XOR Keystream → Ciphertext','I learned how stream ciphers combine data with a generated keystream and why secure key management matters.')">View Details →</button></article>
+      </div>
+    </section>
+
+    <section class="section playground" id="playground">
+      <div class="section-heading reveal">
+        <span>04 / INTERACTIVE</span>
+        <h2>CIPHER <em>PLAYGROUND</em></h2>
+        <p>Try a simple Caesar Cipher directly in your portfolio.</p>
+      </div>
+      <div class="cipher-box glass reveal">
+        <div class="cipher-controls">
+          <label>Operation
+            <select id="operation"><option value="encrypt">Encrypt</option><option value="decrypt">Decrypt</option></select>
+          </label>
+          <label>Shift <input type="number" id="shift" value="3" min="0" max="25"></label>
+        </div>
+        <label class="full-label">Message
+          <textarea id="cipherInput" placeholder="Type a message...">HELLO WORLD</textarea>
+        </label>
+        <button class="btn btn-primary" id="cipherBtn">Run Cipher ⚡</button>
+        <div class="cipher-output">
+          <span>OUTPUT</span>
+          <div id="cipherOutput">KHOOR ZRUOG</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section practical" id="practical">
+      <div class="section-heading reveal">
+        <span>05 / PRACTICAL</span>
+        <h2>PROGRAMS & <em>OUTPUTS</em></h2>
+        <p>Document your laboratory experiments here.</p>
+      </div>
+      <div class="practical-layout">
+        <div class="terminal glass reveal">
+          <div class="terminal-top"><i></i><i></i><i></i><span>caesar_cipher.py</span></div>
+          <pre><code>def caesar(text, shift):
+    result = ""
+
+    for ch in text:
+        if ch.isalpha():
+            base = ord('A') if ch.isupper() else ord('a')
+            result += chr((ord(ch)-base+shift)%26+base)
+        else:
+            result += ch
+
+    return result
+
+print(caesar("HELLO", 3))
+# KHOOR</code></pre>
+        </div>
+        <div class="output-panel glass reveal">
+          <span class="mini-label">LAB RECORD</span>
+          <h3>Caesar Cipher Program</h3>
+          <p><b>Objective:</b> Implement a substitution cipher using a shift key.</p>
+          <p><b>Input:</b> HELLO</p>
+          <p><b>Key:</b> 3</p>
+          <div class="terminal-output"><span>$ python caesar_cipher.py</span><strong>KHOOR</strong><small>Process completed successfully.</small></div>
+          <div class="upload-note">📸 Replace this section with your own program/output screenshots.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project" id="project">
+      <div class="section-heading reveal">
+        <span>06 / MINI PROJECT</span>
+        <h2>SECURE <em>MESSAGE SYSTEM</em></h2>
+        <p>A sample project presentation area for your portfolio.</p>
+      </div>
+      <div class="project-card glass reveal">
+        <div class="project-header">
+          <div><span class="mini-label">PROJECT 01</span><h3>Cryptography-Based Secure Message System</h3></div>
+          <span class="project-status">SECURITY: ACTIVE</span>
+        </div>
+        <div class="project-grid">
+          <div><div class="project-icon">🔐</div><h4>Problem Statement</h4><p>Messages sent over networks may be exposed to unauthorized users. A secure message system can protect information through encryption.</p></div>
+          <div><div class="project-icon">🎯</div><h4>Objectives</h4><p>Encrypt sensitive messages, support secure decryption, demonstrate key-based security and improve understanding of cryptographic techniques.</p></div>
+          <div><div class="project-icon">⚙</div><h4>Methodology</h4><p>Input → Key Selection → Encryption → Ciphertext Transmission → Decryption → Original Message.</p></div>
+          <div><div class="project-icon">🚀</div><h4>Future Enhancement</h4><p>Integrate AES/RSA, user authentication, database storage, digital signatures and secure key management.</p></div>
+        </div>
+        <div class="flow">
+          <span>MESSAGE</span><b>→</b><span>ENCRYPT</span><b>→</b><span>CIPHERTEXT</span><b>→</b><span>DECRYPT</span><b>→</b><span>MESSAGE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+      <div class="section-heading reveal">
+        <span>07 / HIGHLIGHTS</span>
+        <h2>CERTIFICATES & <em>ACHIEVEMENTS</em></h2>
+        <p>Add your academic milestones and event participation.</p>
+      </div>
+      <div class="achievement-grid">
+        <div class="achievement-card glass reveal"><span>🏅</span><h3>Certificates</h3><p>Upload course and certification images here.</p><button class="small-btn">ADD CERTIFICATE</button></div>
+        <div class="achievement-card glass reveal"><span>🎓</span><h3>Workshops</h3><p>Document workshops, technical sessions and symposium participation.</p><button class="small-btn">ADD WORKSHOP</button></div>
+        <div class="achievement-card glass reveal"><span>🏆</span><h3>Achievements</h3><p>Showcase prizes, competitions and academic accomplishments.</p><button class="small-btn">ADD ACHIEVEMENT</button></div>
+      </div>
+    </section>
+
+    <section class="section reflection" id="reflection">
+      <div class="reflection-box glass reveal">
+        <span class="mini-label">08 / LEARNING REFLECTION</span>
+        <h2>WHAT I <em>LEARNED</em></h2>
+        <p>Learning Cryptography & Network Security helped me understand how information can be protected against unauthorized access and manipulation. I explored classical ciphers such as Caesar and Playfair and then studied modern techniques including DES, AES, RSA and Diffie–Hellman.</p>
+        <p>The practical exercises helped me connect theoretical concepts with programming. I learned that strong security depends not only on algorithms but also on key management, authentication, integrity and secure implementation.</p>
+        <p>This subject increased my interest in cybersecurity and encouraged me to explore secure application development and modern cryptographic systems further.</p>
+        <div class="quote">“Security is not a feature. It is a continuous process.”</div>
+      </div>
+    </section>
+
+    <section class="section references" id="references">
+      <div class="section-heading reveal">
+        <span>09 / SOURCES</span>
+        <h2>REFERENCES & <em>RESOURCES</em></h2>
+      </div>
+      <div class="reference-list glass reveal">
+        <div><b>01</b><span>William Stallings — Cryptography and Network Security: Principles and Practice.</span></div>
+        <div><b>02</b><span>Behrouz A. Forouzan — Cryptography and Network Security.</span></div>
+        <div><b>03</b><span>Course notes, laboratory materials and classroom resources.</span></div>
+        <div><b>04</b><span>Official documentation and educational resources related to cryptographic algorithms.</span></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card glass reveal">
+        <div>
+          <span class="mini-label">10 / CONNECT</span>
+          <h2>LET'S <em>CONNECT</em></h2>
+          <p>Thank you for exploring my Cryptography & Network Security E-Portfolio.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com">✉ anush100323@gmail.com</a>
+          <a href="#" onclick="return false;">in LinkedIn Profile</a>
+          <a href="#" onclick="return false;">⌂ Kings College of Engineering</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo"><span>&lt;</span>CRYPT<span>0</span><span>/&gt;</span></div>
+    <p>Cryptography & Network Security • E-Portfolio</p>
+    <p>© 2026 Anusha T</p>
+  </footer>
+
+  <div class="modal" id="algoModal">
+    <div class="modal-box glass">
+      <button class="modal-close" onclick="closeAlgo()">×</button>
+      <span class="mini-label">ALGORITHM DETAILS</span>
+      <h2 id="modalTitle">Algorithm</h2>
+      <div class="modal-section"><b>OBJECTIVE</b><p id="modalObjective"></p></div>
+      <div class="modal-section"><b>THEORY</b><p id="modalTheory"></p></div>
+      <div class="modal-section"><b>EXAMPLE</b><div class="example-box" id="modalExample"></div></div>
+      <div class="modal-section"><b>LEARNING</b><p id="modalLearning"></p></div>
+    </div>
+  </div>
+
+  <button id="topBtn" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
