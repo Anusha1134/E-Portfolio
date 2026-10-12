@@ -16,7 +16,8 @@
     <div class="loader-text">INITIALIZING SECURE PORTFOLIO<span>_</span></div>
   </div>
 
-  <canvas id="matrix"></canvas>
+  <canvas id="matrix">
+  </canvas>
   <div class="cursor-glow"></div>
 
   <header class="navbar" id="navbar">
@@ -44,7 +45,9 @@
         <h1>SECURE THE<br><span>DIGITAL WORLD</span></h1>
         <p class="hero-subtitle">An interactive learning portfolio exploring encryption, cybersecurity, algorithms and secure communication.</p>
         <div class="student-card glass">
-          <div class="avatar">AT</div>
+          <div class="avatar">
+            <img src="profile.jpeg" alt="My Photo">
+          </div>
           <div>
             <strong>ANUSHA T</strong>
             <small>III Year • CSE • Kings College of Engineering</small>
@@ -74,7 +77,9 @@
       </div>
       <div class="about-grid">
         <div class="profile-panel glass reveal">
-          <div class="profile-photo">YOUR<br>PHOTO</div>
+          <div class="profile-photo">
+            <img src="profile.jpeg" alt="My Profile Photo">
+          </div>
           <div class="profile-info">
             <h3>Anusha T</h3>
             <p>Computer Science & Engineering</p>
@@ -137,7 +142,10 @@
       <div class="cipher-box glass reveal">
         <div class="cipher-controls">
           <label>Operation
-            <select id="operation"><option value="encrypt">Encrypt</option><option value="decrypt">Decrypt</option></select>
+            <select id="operation">
+              <option value="encrypt">Encrypt</option>
+              <option value="decrypt">Decrypt</option>
+            </select>
           </label>
           <label>Shift <input type="number" id="shift" value="3" min="0" max="25"></label>
         </div>
